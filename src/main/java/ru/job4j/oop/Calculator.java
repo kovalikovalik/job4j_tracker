@@ -13,7 +13,7 @@ public class Calculator {
     }
 
     public static int minus(int y) {
-        return x - y;
+        return y - x;
     }
 
     public int divide(int y) {
@@ -36,5 +36,5 @@ public class Calculator {
         System.out.println("Частное равно " + rsl);
         rsl = calculator.sumAllOperation(5);
         System.out.println("Сумма всех действий равна " + rsl);
-            }
+    }
 }
