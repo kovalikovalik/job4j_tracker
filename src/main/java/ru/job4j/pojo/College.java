@@ -7,8 +7,8 @@ public class College {
         Student student = new Student();
         student.setName("Anastasiia Bogomolova ");
         student.setGroup("B182 ");
-        student.setEntrance(new Date());
+        student.setAdmission(new Date());
         System.out.println(student.getName() + "is in a group " + student.getGroup() + System.lineSeparator()
-                + "The date of entrance is " + student.getEntrance());
+                + "The date of entrance is " + student.getAdmission());
     }
 }

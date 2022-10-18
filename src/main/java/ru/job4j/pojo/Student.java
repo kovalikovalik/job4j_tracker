@@ -5,7 +5,7 @@ import java.util.Date;
 public class Student {
     private String name;
     private String group;
-    private Date entrance;
+    private Date admission;
 
     public String getName() {
         return name;
@@ -23,11 +23,11 @@ public class Student {
         this.group = group;
     }
 
-    public Date getEntrance() {
-        return entrance;
+    public Date getAdmission() {
+        return admission;
     }
 
-    public void setEntrance(Date entrance) {
-        this.entrance = entrance;
+    public void setAdmission(Date admission) {
+        this.admission = admission;
     }
 }
