@@ -16,8 +16,7 @@ public class Tracker {
     public Item[] findAll() {
         Item[] rsl = new Item[items.length];
         int size = 0;
-        for (int i = 0; i < items.length; i++) {
-            Item item = items[i];
+        for (Item item : items) {
             if (item != null) {
                 rsl[size] = item;
                 size++;
@@ -32,7 +31,7 @@ public class Tracker {
         int letter = 0;
         for (int i = 0; i < size; i++) {
             Item item = items[i];
-            if (item.getName() == key) {
+            if (item.getName().equals(key)) {
                 rsl[i] = item;
                 letter++;
             }
