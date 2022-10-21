@@ -2,10 +2,10 @@ package ru.job4j.pojo;
 
 public class Library {
     public static void main(String[] args) {
-        Book book1 = new Book("Childhood ", 250);
-        Book book2 = new Book("Adolescence ", 300);
+        Book book1 = new Book("Childhood", 250);
+        Book book2 = new Book("Adolescence", 300);
         Book book3 = new Book("Youth", 200);
-        Book book4 = new Book("Clean Code ", 416);
+        Book book4 = new Book("Clean Code", 416);
         Book[] books = new Book[]{book1, book2, book3, book4};
 
         for (Book lb : books) {
@@ -21,7 +21,7 @@ public class Library {
         }
 
         for (Book book : books) {
-            if ("ClanCode".equals(book.getTitle())) {
+            if ("Clean Code".equals(book.getTitle())) {
                 System.out.println(book.getTitle());
             }
         }
