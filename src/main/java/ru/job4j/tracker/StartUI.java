@@ -64,7 +64,9 @@ public class StartUI {
                 String name = scanner.nextLine();
                 Item[] items = tracker.findByName(name);
                 if (items.length > 0) {
-                    System.out.println(name);
+                    for (Item item : items) {
+                        System.out.println(name);
+                    }
                 } else {
                     System.out.println("Заявки с именем: " + name + " не найдены.");
                 }
