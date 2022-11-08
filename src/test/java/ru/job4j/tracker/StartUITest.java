@@ -1,9 +1,9 @@
 package ru.job4j.tracker;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
-class StartUITest {
+public class StartUITest {
 
     @Test
     public void whenCreateItem() {
@@ -100,7 +100,7 @@ class StartUITest {
                 + "0. Find item by name" + ln
                 + "1. Exit" + ln
                 + "=== Find item by name ===" + ln
-                + one.getName() + ln
+                + one + ln
                 + "Menu:" + ln
                 + "0. Find item by name" + ln
                 + "1. Exit" + ln
