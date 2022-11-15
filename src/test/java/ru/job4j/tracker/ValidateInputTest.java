@@ -19,7 +19,7 @@ class ValidateInputTest {
     public void whenValidInput() {
         Output out = new StubOutput();
         Input in = new StubInput(
-                new String[] {"0", }
+                new String[] {"0"}
         );
         ValidateInput input = new ValidateInput(out, in);
         int selected = input.askInt("Enter menu:");
@@ -41,7 +41,7 @@ class ValidateInputTest {
     public void whenInputIsNegative() {
         Output out = new StubOutput();
         Input in = new StubInput(
-                new String[] {"-1", }
+                new String[] {"-1"}
         );
         ValidateInput input = new ValidateInput(out, in);
         int selected = input.askInt("Enter menu:");
