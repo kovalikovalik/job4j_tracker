@@ -30,10 +30,12 @@ class ValidateInputTest {
     public void whenValidMultipleInput() {
         Output out = new StubOutput();
         Input in = new StubInput(
-                new String[] {"1", "1"}
+                new String[] {"0", "1"}
         );
         ValidateInput input = new ValidateInput(out, in);
         int selected = input.askInt("Enter menu:");
+        assertThat(selected).isEqualTo(0);
+        selected = input.askInt("Enter menu:");
         assertThat(selected).isEqualTo(1);
     }
 
